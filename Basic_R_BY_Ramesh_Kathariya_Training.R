@@ -596,6 +596,8 @@ ordiplot(dca_result)#: Generates a species-environment biplot.
 #         *Performing CCA*
 #         --------------
 data("varechem"); data("varespec")
+View(varechem);
+View(varespec)
 par(mfrow = c(1,2))
 my_cca1 <- cca (varespec~., varechem)
 #my_cca2 <- cca (varechem~., varespec)
