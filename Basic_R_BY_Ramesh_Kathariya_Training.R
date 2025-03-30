@@ -405,6 +405,10 @@ abline(mod_6, lwd=2, col="red", lty = 6)
 text(55, 60, "We are practicing txt", col = "red", adj = c(0, -1))
 summary(mod_6)
 
+
+
+
+
 ################################################################################
 
 #                  Chi-Square Test
@@ -499,9 +503,34 @@ biomass1
 
 mean(biomass1$altitude, na.rm =TRUE)
 
+
+################################################################################
+
+#                 
+
+################################################################################
+
+rm(list = ls)
+dev.off()
+data(mtcars)
+
+str(mtcars)
+
+model <- lm(mpg ~ wt + hp, data = mtcars) # here we are trying to see the miles/gallon usage is affected by the weight and the horsepowere of the engine
+
+summary(model)  # summaarising the model
+
+plot(model)    # visualising the model
+
+
+
 #********************************************************************************
 #*
 #*
+
+#*
+#*
+
 
 #     Working with Multivariate Tools
 
